@@ -1,0 +1,21 @@
+.reg {
+    border: 0.5px solid #363636;
+    width: 350px;
+    margin: 5px auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+p{
+    color: white;
+    font-size: 14px;
+    text-align:center;
+    margin: auto auto auto auto;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
